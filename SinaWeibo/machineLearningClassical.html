@@ -11800,7 +11800,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Import Pandas package which help us to work with a structured dataset easily</span>
@@ -11810,10 +11810,8 @@ div#notebook {
 <span class="c1">#Read Microsoft Excel file</span>
 <span class="n">excel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="s2">&quot;2015_weibodata.xlsx&quot;</span><span class="p">)</span>
 <span class="c1">#Load the dataset from the file as a Pandas table (called also dataframe)</span>
-<span class="n">data</span><span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">data</span><span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Obtain first sheet from the Excel file</span>
 <span class="c1">#Show the first five rows of the table</span>
-<span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
 <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
@@ -11827,7 +11825,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13911,7 +13909,7 @@ Fold 5---&gt; Train: [ 1  2  3  5  6  7  8  9 10 11] | test: [ 0  4 13 16 20 27 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Import the mathematical package used for python to obtain the average accuracy of the results provided for each fold</span>
@@ -13960,6 +13958,22 @@ Fold: 1 accuracy: 0.6251851851851852
 Fold: 2 accuracy: 0.6255555555555555
 Fold: 3 accuracy: 0.6151851851851852
 Fold: 4 accuracy: 0.43092592592592593
+Fold: 5 accuracy: 0.3698148148148148
+Average accuracy: 0.5333333333333334
+Classifier name: logistic regression
+Fold: 1 accuracy: 0.6416666666666667
+Fold: 2 accuracy: 0.6407407407407407
+Fold: 3 accuracy: 0.635
+Fold: 4 accuracy: 0.6394444444444445
+Fold: 5 accuracy: 0.6348148148148148
+Average accuracy: 0.6383333333333334
+Classifier name: Multinomial Naive Bayes
+Fold: 1 accuracy: 0.6275925925925926
+Fold: 2 accuracy: 0.6105555555555555
+Fold: 3 accuracy: 0.6340740740740741
+Fold: 4 accuracy: 0.6164814814814815
+Fold: 5 accuracy: 0.6187037037037038
+Average accuracy: 0.6214814814814815
 </pre>
 </div>
 </div>
