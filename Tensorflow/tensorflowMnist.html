@@ -11787,7 +11787,7 @@ div#notebook {
 <li>Matplotlib (visualization) <a href="https://matplotlib.org/">https://matplotlib.org/</a></li>
 </ul>
 </li>
-<li>The tensorflow version used correspond to a standalone application which means that does not support the use of parallel 
+<li>The Tensorflow version used correspond to a standalone application which means that does not support the use of parallel 
 computations on GPUs.</li>
 </ol>
 <h2 id="Step-1:-Load-the-MNIST-dataset">Step 1: Load the MNIST dataset<a class="anchor-link" href="#Step-1:-Load-the-MNIST-dataset">&#182;</a></h2><p>The Mnist dataset includes over 60,000 training images, plus 10,000 test images resized into 28x28 matices with grayscale values between 0 and 254.The following shows how to load this dataset:</p>
@@ -11797,14 +11797,14 @@ computations on GPUs.</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Command used to see the plot inside the Jupyter notebook</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="c1">#Package used to get the Mnist dataset from tensorflow available examples</span>
+<span class="c1">#Package used to get the Mnist dataset from Tensorflow available examples</span>
 <span class="kn">from</span> <span class="nn">tensorflow.examples.tutorials.mnist</span> <span class="k">import</span> <span class="n">input_data</span>
 <span class="c1">#Load the Mnist dataset</span>
 <span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="s2">&quot;MNIST_data/&quot;</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -11887,7 +11887,7 @@ Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-2:-Preprocess-the-Mnist-dataset">Step 2: Preprocess the Mnist dataset<a class="anchor-link" href="#Step-2:-Preprocess-the-Mnist-dataset">&#182;</a></h2><ol>
-<li>Reshape the digits from each training image to a matrix of (28,28) (rows,columns)</li>
+<li>Cast the digits from each training image to a float number (in case of any error in the dataset)</li>
 </ol>
 
 </div>
@@ -11895,7 +11895,7 @@ Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Empty lists for storing reshaped images and labels</span>
@@ -11906,17 +11906,17 @@ Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
     <span class="c1">#Transform all the values to a float data type</span>
     <span class="n">image</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
     <span class="c1">#Transform an image to a matrix of 28x28</span>
-    <span class="n">trainingImages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
-<span class="c1">#Similr to the images, reshape each label to a float data type    </span>
+    <span class="n">trainingImages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="c1">#Obtain the labels associated to each image (in a scalar form instead of a vector)</span>
 <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">labels</span><span class="p">:</span>   
     <span class="n">trainingLabels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">label</span><span class="p">)</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
-<span class="c1">#Transform the training list to a numpy array (for compatibility with tensorflow function)   </span>
+<span class="c1">#Transform the training list to a numpy array (for compatibility with Tensorflow function)   </span>
 <span class="n">trainingImages</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainingImages</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>    
-<span class="n">trainingLabels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainingLabels</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> 
+<span class="n">trainingLabels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainingLabels</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> 
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Reshaped image examples&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">trainingImages</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">trainingImages</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Reshaped label examples&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">trainingLabels</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">trainingLabels</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Images dimensions: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">trainingImages</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Labels dimensions: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">trainingImages</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 </pre></div>
@@ -11936,25 +11936,17 @@ Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Reshaped image examples
-[[[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]
-
- [[0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  ...
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]
-  [0. 0. 0. ... 0. 0. 0.]]]
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
 Reshaped label examples
-[7. 3.]
-Images dimensions: (55000, 28, 28)
-Labels dimensions: (55000, 28, 28)
+[7 3 4 6 1 8 1 0 9 8]
+Images dimensions: (55000, 784)
+Labels dimensions: (55000, 784)
 </pre>
 </div>
 </div>
@@ -11974,18 +11966,18 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">testImages</span><span class="o">=</span> <span class="p">[]</span>
 <span class="n">testLabels</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>
     <span class="n">image</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
-    <span class="n">testImages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>   
+    <span class="n">testImages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>   
 <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">:</span>   
     <span class="n">testLabels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">label</span><span class="p">)</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>  
 <span class="n">testImages</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">testImages</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>    
-<span class="n">testLabels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">testLabels</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> 
+<span class="n">testLabels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">testLabels</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> 
 </pre></div>
 
 </div>
@@ -11997,11 +11989,11 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-3:-Define-tensorflow-graph">Step 3: Define tensorflow graph<a class="anchor-link" href="#Step-3:-Define-tensorflow-graph">&#182;</a></h2><ol>
-<li>Back-propagtion intuition</li>
+<h2 id="Step-3:-Define-the-Tensorflow-graph">Step 3: Define the Tensorflow graph<a class="anchor-link" href="#Step-3:-Define-the-Tensorflow-graph">&#182;</a></h2><ol>
+<li>Remainder of the Back-propagtion intuition</li>
 </ol>
 <p><img src="backPropagation.jpg" alt="Drawing" style="width: 600px;"/></p>
-<p>2.  multi-layer perceptron proposed for this example</p>
+<p>2.  Multi-layer perceptron proposed for this example</p>
 <p><img src="backPropagation2.png" alt="Drawing" style="width: 600px;"/></p>
 
 </div>
@@ -12011,14 +12003,14 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>3.  Create the proposed graph in the tensorflow environment considering that nodes in the graph represent mathematical operations, whereas edges represent data (tensors) that is communicated from one node to others. It is important to highlight that tensors are multidimensional arrays (representing vectors with a 1D tensors, matrices with a 2D tensors, etc.).</p>
+<p>3.  Create the proposed graph in the Tensorflow environment considering that nodes in the graph represent mathematical operations, whereas edges represent data (tensors) that is communicated from one node to others. It is important to highlight that tensors are multidimensional arrays (representing vectors with a 1D tensors, matrices with a 2D tensors, etc.).</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12049,7 +12041,7 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#https://www.tensorflow.org/api_docs/python/tf/placeholder</span>
@@ -12068,14 +12060,14 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After define the placeholders, we can create a function that represents the behavior of a neural network layer. It is important to noticed that in the function there are define multiple tensorflow variables which helps to represent shared, persistent values across a graph execution.</p>
+<p>After define the placeholders, we can create a function that represents the behavior of a neural network layer. It is important to noticed that in the function there are define multiple Tensorflow variables which helps to represent shared, persistent values across a graph execution.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12096,11 +12088,11 @@ Labels dimensions: (55000, 28, 28)
         <span class="n">stddev</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n_inputs</span><span class="p">)</span>
         <span class="n">init</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal</span><span class="p">((</span><span class="n">n_inputs</span><span class="p">,</span> <span class="n">n_neurons</span><span class="p">),</span> <span class="n">stddev</span><span class="o">=</span><span class="n">stddev</span><span class="p">)</span>
         <span class="n">W</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;weights&quot;</span><span class="p">)</span>
-        <span class="c1">#Create a tensorflow variable for the bias</span>
+        <span class="c1">#Create a Tensorflow variable for the bias</span>
         <span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">n_neurons</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;bias&quot;</span><span class="p">)</span>
         
         <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        ATTENTION: Creation of the graph in tensorflow</span>
+<span class="sd">        ATTENTION: Creation of the graph in Tensorflow</span>
 <span class="sd">        Compute the weighted sum of the inputs plus the bias term for each neuron the layer</span>
 <span class="sd">        https://www.tensorflow.org/api_docs/python/tf/matmul</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -12128,7 +12120,7 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Tensorflow name scope to group together operations (nodes) in the graph</span>
@@ -12140,7 +12132,8 @@ Labels dimensions: (55000, 28, 28)
     <span class="c1">#The third layer take the output of the second layer as input</span>
     <span class="n">hidden3</span> <span class="o">=</span> <span class="n">neuron_layer</span><span class="p">(</span><span class="n">hidden2</span><span class="p">,</span> <span class="n">n_hidden3</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;hidden3&quot;</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">)</span>
     <span class="c1">#The output of the third layer is taken as input for the final layer</span>
-    <span class="n">ouput</span> <span class="o">=</span> <span class="n">neuron_layer</span><span class="p">(</span><span class="n">hidden3</span><span class="p">,</span> <span class="n">n_outputs</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputs&quot;</span><span class="p">)</span>
+    <span class="c1">#Outputs are also called logits in the neural network theory</span>
+    <span class="n">ouputs</span> <span class="o">=</span> <span class="n">neuron_layer</span><span class="p">(</span><span class="n">hidden3</span><span class="p">,</span> <span class="n">n_outputs</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputs&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12152,8 +12145,311 @@ Labels dimensions: (55000, 28, 28)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The activation function use in the neural network is presented below:</p>
+<p>The activation function use in the neural network is presented below (<a href="https://www.tensorflow.org/versions/r1.0/api_guides/python/nn">https://www.tensorflow.org/versions/r1.0/api_guides/python/nn</a>):</p>
 <p><img src="ReLU.png" alt="Drawing" style="width: 500px;"/></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Step-4:-Create-a-cost-function-and-optimizer-for-the-Tensorflow-graph">Step 4: Create a cost function and optimizer for the Tensorflow graph<a class="anchor-link" href="#Step-4:-Create-a-cost-function-and-optimizer-for-the-Tensorflow-graph">&#182;</a></h2><ol>
+<li>Define a cost function that helps to obtain the error rate between the neural network output and the real value provided by the training labels. In this case the <strong>softmax cross entropy</strong> is used, considering that this function penalize models that estimate a low probability for the target labels. The softmax cross entropy function first apply the softmax activation and then compute the cross entropy. In order to obtain the error rate (single value) associated, the <strong>mean cross entropy</strong> is obtained.</li>
+</ol>
+<p><img src="cost.png" alt="Drawing" style="width: 500px;"/>
+<img src="softmaxFun.jpg" alt="Drawing" style="width: 600px;"/>
+<img src="crossEntropy.png" alt="Drawing" style="width: 500px;"/></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">name_scope</span><span class="p">(</span><span class="s2">&quot;cost&quot;</span><span class="p">):</span>
+    <span class="c1">#https://www.tensorflow.org/api_docs/python/tf/nn/sparse_softmax_cross_entropy_with_logits</span>
+    <span class="c1">#Obtain the softmax cross entropy which returns a ID tensor</span>
+    <span class="n">entropy</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">sparse_softmax_cross_entropy_with_logits</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">logits</span><span class="o">=</span><span class="n">ouputs</span><span class="p">)</span>
+    <span class="c1">#Obtain the mean value associated to the 1D tensor previously calculated</span>
+    <span class="c1">#https://www.tensorflow.org/api_docs/python/tf/reduce_mean</span>
+    <span class="n">loss</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">entropy</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;loss&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>2. After obtaining the error rate associated to the graph we need to minimize the cost function by updating the graph weights using an optimization process. In this case it is use a gradient descent approach considering its versatility to be applied to different types of problems.</p>
+<p><img src="gradient.png" alt="Drawing" style="width: 500px;"/></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">the Learning step is a hyper-parameter that controls how much we are adjusting the weights of our network with respect the </span>
+<span class="sd">loss gradient. The lower the value, the slower we travel along the downward slope</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">learningStep</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="c1">#Tensorflow name scope to group together operations (nodes) in the graph</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">name_scope</span><span class="p">(</span><span class="s2">&quot;train&quot;</span><span class="p">):</span>
+    <span class="c1">#Prepare the optimizer</span>
+    <span class="c1">#https://www.tensorflow.org/api_docs/python/tf/train/GradientDescentOptimizer</span>
+    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="n">learningStep</span><span class="p">)</span>
+    <span class="c1">#Minimize the error rate</span>
+    <span class="n">training_op</span> <span class="o">=</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">loss</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Step-5:-training-phase">Step 5: training phase<a class="anchor-link" href="#Step-5:-training-phase">&#182;</a></h2><ol>
+<li>Specify how to evaluate  the model that is going to be created from the neural network. First, for each instance, determine if the neural networks prediction is correct by checking whether or not the highest value obtained in the output layer correspond to the target label. Later calculate the average of the results obtained and calculate the accuracy.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">name_scope</span><span class="p">(</span><span class="s2">&quot;evaluation&quot;</span><span class="p">):</span>
+    <span class="c1">#https://www.tensorflow.org/api_docs/python/tf/nn/in_top_k</span>
+    <span class="c1">#Says whether the targets are in the top K predictions.</span>
+    <span class="n">correct</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">in_top_k</span><span class="p">(</span><span class="n">ouputs</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="c1">#Obtain the accuracy for each training vector</span>
+    <span class="c1">#https://www.tensorflow.org/api_docs/python/tf/cast</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>2. Implement a function that divides the training dataset into a number of sets or parts for creating the neural network easily.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">createBatch</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
+    <span class="c1">#Obtan a list of random indices from 0 to len(X)</span>
+    <span class="n">rnd_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+    <span class="n">n_batches</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">//</span> <span class="n">batch_size</span>
+    <span class="c1">#Split a list into multiple sub-arrays.</span>
+    <span class="k">for</span> <span class="n">batch_idx</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">rnd_idx</span><span class="p">,</span> <span class="n">n_batches</span><span class="p">):</span>
+        <span class="c1">#Obtain the list batches</span>
+        <span class="n">X_batch</span><span class="p">,</span> <span class="n">y_batch</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">batch_idx</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">batch_idx</span><span class="p">]</span>
+        <span class="c1">#Return a Python generator that creates the batches on the fly without saving them in memory</span>
+        <span class="k">yield</span> <span class="n">X_batch</span><span class="p">,</span> <span class="n">y_batch</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>3. After the construction of the graph structure and the operations associated, the next step is to create a classification model following a supervised learning approach.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Allocate all the variables in the Tensorflow environment for initialization</span>
+<span class="c1">#https://www.tensorflow.org/api_docs/python/tf/global_variables</span>
+<span class="n">init</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">global_variables_initializer</span><span class="p">()</span>
+<span class="c1">#Tensorflow variable used for saving (and restoring) our model to disk</span>
+<span class="c1">#https://www.tensorflow.org/api_docs/python/tf/train/Saver</span>
+<span class="n">saver</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Saver</span><span class="p">()</span>
+<span class="c1">#Number of epochs that we want to run the model</span>
+<span class="n">numberEpochs</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="c1">#Number of batches related to each epoch</span>
+<span class="n">batchSize</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Create a TensorFlow session to run the graph across a set of local and remote devices. A Session object </span>
+<span class="sd">encapsulates the environment in which Operation objects are executed, and tensor objects are evaluated.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
+    <span class="c1">#Initialize all variables in the session</span>
+    <span class="n">init</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+    <span class="c1">#One Epoch is when an ENTIRE dataset is passed forward and backward through the neural network only ONCE.</span>
+    <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numberEpochs</span><span class="p">):</span>
+        <span class="c1">#Since, one epoch is too big to feed to the computer at once we divide it in several smaller batches.</span>
+        <span class="k">for</span> <span class="n">X_batch</span><span class="p">,</span> <span class="n">y_batch</span> <span class="ow">in</span> <span class="n">createBatch</span><span class="p">(</span><span class="n">trainingImages</span><span class="p">,</span> <span class="n">trainingLabels</span><span class="p">,</span> <span class="n">batchSize</span><span class="p">):</span>
+            <span class="c1">#Train the neural network using each batch </span>
+            <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">training_op</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">X_batch</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">y_batch</span><span class="p">})</span>
+        <span class="c1">#Evaluate the accuracy for each batch    </span>
+        <span class="n">acc_batch</span> <span class="o">=</span> <span class="n">accuracy</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">X_batch</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">y_batch</span><span class="p">})</span>   
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Epoch:&quot;</span><span class="p">,</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Batch accuracy:&quot;</span><span class="p">,</span> <span class="n">acc_batch</span><span class="p">)</span>
+    <span class="c1">#Save the model in the disk for evaluation later the test dataset  </span>
+    <span class="n">save_path</span> <span class="o">=</span> <span class="n">saver</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">sess</span><span class="p">,</span> <span class="s2">&quot;./NeuralNetworkModel.ckpt&quot;</span><span class="p">)</span>      
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch: 1 Batch accuracy: 0.92
+Epoch: 2 Batch accuracy: 1.0
+Epoch: 3 Batch accuracy: 0.96
+Epoch: 4 Batch accuracy: 0.92
+Epoch: 5 Batch accuracy: 0.98
+Epoch: 6 Batch accuracy: 0.98
+Epoch: 7 Batch accuracy: 1.0
+Epoch: 8 Batch accuracy: 1.0
+Epoch: 9 Batch accuracy: 1.0
+Epoch: 10 Batch accuracy: 0.96
+Epoch: 11 Batch accuracy: 0.98
+Epoch: 12 Batch accuracy: 0.98
+Epoch: 13 Batch accuracy: 0.98
+Epoch: 14 Batch accuracy: 1.0
+Epoch: 15 Batch accuracy: 1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Step-6:-test-phase">Step 6: test phase<a class="anchor-link" href="#Step-6:-test-phase">&#182;</a></h2><ul>
+<li>Evaluate the proposed model in the Mnist test dataset</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Create a TensorFlow session to run the graph across a set of local and remote devices. A Session object </span>
+<span class="sd">encapsulates the environment in which Operation objects are executed, and tensor objects are evaluated.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
+    <span class="c1">#Recover the model from the disk</span>
+    <span class="n">saver</span><span class="o">.</span><span class="n">restore</span><span class="p">(</span><span class="n">sess</span><span class="p">,</span> <span class="s2">&quot;./NeuralNetworkModel.ckpt&quot;</span><span class="p">)</span>
+    <span class="c1">#Obtain the first twenty images from the test dataset</span>
+    <span class="n">testSubset</span> <span class="o">=</span> <span class="n">testImages</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span>
+    <span class="c1">#Apply the model for each image to obtain a prediction (number label)</span>
+    <span class="n">Z</span> <span class="o">=</span> <span class="n">ouputs</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span><span class="n">testSubset</span><span class="p">})</span>
+    <span class="c1">#Obtain the index of the maximum value of the ten neurons in the ouput layer</span>
+    <span class="n">predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1">#Show a comparison of predicted values and true values (gold standard)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted classes:&quot;</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Actual classes:   &quot;</span><span class="p">,</span> <span class="n">testLabels</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>  
+    <span class="n">accuracyPrediction</span> <span class="o">=</span> <span class="n">accuracy</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">X_batch</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">y_batch</span><span class="p">})</span>   
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy prediction:&quot;</span><span class="p">,</span> <span class="n">accuracyPrediction</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>INFO:tensorflow:Restoring parameters from ./NeuralNetworkModel.ckpt
+Predicted classes: [7 2 1 0 4 1 4 9 5 9 0 6 9 0 1 5 9 7 3 4]
+Actual classes:    [7 2 1 0 4 1 4 9 5 9 0 6 9 0 1 5 9 7 3 4]
+Accuracy prediction: 1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conlusions">Conlusions<a class="anchor-link" href="#Conlusions">&#182;</a></h2><ul>
+<li>What we seen so far:<ol>
+<li>Load and inspect an specific dataset.</li>
+<li>Preprocess the information associated to the dataset.</li>
+<li>Creation of a Neural network using the Tensorflow package.<ul>
+<li>Input layer with seven hundred and eighty four neurons.</li>
+<li>Two hiden layers of three hundred neurons.</li>
+<li>One layer of one hundred neurons.</li>
+<li>One ouput layer of ten neurons, one for each posible number in the dataset (0, 1, ..., 9).</li>
+</ul>
+</li>
+<li>Implementation of a cost function and an optimizer for training the neural network.</li>
+<li>Creation of a model using the training dataset provided.</li>
+<li>Evaluation of the test dataset set using the model created.</li>
+</ol>
+</li>
+<li>Obtained results highlight the following findings:  <ol>
+<li>Tensorflow permits to create a graph where nodes are operations and edges are information that flows from one operation to others.</li>
+<li>The variables, constants and placeholders created in Tensorflow not need to be evaluated immediately or in the same machine.</li>
+<li>There are multiple predefined functions in Tensorflow that can help to create a neural network easily.</li>
+<li>If the computations were dense, we can distribute the job processing among different computers or gpus using Tensorflow API.</li>
+</ol>
+</li>
+</ul>
 
 </div>
 </div>

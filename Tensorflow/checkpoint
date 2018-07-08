@@ -1,0 +1,2 @@
+model_checkpoint_path: "NeuralNetworkModel.ckpt"
+all_model_checkpoint_paths: "NeuralNetworkModel.ckpt"
