@@ -1,0 +1,2841 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology1484677652201="http://www.semanticweb.org/ontologies/2017/0/Ontology1484677652201.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#ENTITY -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ENTITY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administra">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAdministradoPor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AdscritoA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AdscritoA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CentroDeInvestigacion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ContieneA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ContieneA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsContenidoPor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BitStream"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAdministradoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAdministradoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAsesorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAsesorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAsesoradoPor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAsesoradoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAsesoradoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAutorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsAutorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EscritoPor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsContenidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsContenidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BitStream"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsSinodalDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsSinodalDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TieneSinodal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsUsuarioDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EsUsuarioDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EscritoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EscritoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IncluidoEnColeccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IncluidoEnColeccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IncluyeColeccion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IncluyeColeccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IncluyeColeccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PerteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PerteneceA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TieneSinodal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TieneSinodal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ApellidoMaterno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ApellidoMaterno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Segundo apellido asignado a una persona.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ApellidoPaterno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ApellidoPaterno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Primer apellido asignado a una persona.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AreaConocimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AreaConocimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Tópico o dominio asociado al contenido de un documento de texto por parte de CONACYT.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Audiencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Audiencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de personas a las que va dirigido el repositorio así como su alcance en el manejo/administración de este.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Autores -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Autores">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nombres de los participantes de la investigación y redacción de un documento.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatosDescripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatosDescripcion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Resumen del propósito de la base de datos almacenada en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatosNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatosNombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Titulo usado para describir a una base de datos contenida en el repositorio institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CURP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CURP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Clave Única de Registro de Población</rdfs:comment>
+        <rdfs:comment xml:lang="es">Código alfanumérico único de identidad de 18 caracteres utilizado para identificar oficialmente tanto a residentes como a ciudadanos mexicanos de todo el país.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CVU -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CVU">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Curriculum Vitae Unico</rdfs:comment>
+        <rdfs:comment xml:lang="es">Código alfanumérico único de identidad utilizado por CONACYT para identificar de manera inequívoca a un aspirante/becario/ex-becario.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CarreraAsociada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CarreraAsociada">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Campo de investigación o especialización asociado a la tesis dentro de la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CorreoElectronico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CorreoElectronico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Servicio de red que permite a un usuario enviar y recibir mensajes (también denominados mensajes electrónicos o cartas digitales) mediante redes de comunicación electrónica</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DNI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DNI">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código alfanumérico único de identidad utilizado por varios países para identificar de manera inequívoca a una persona.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Documento Nacional de Identidad</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DOI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DOI">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Digital Object Identifier</rdfs:comment>
+        <rdfs:comment xml:lang="es">El identificador de objeto digital, es un sistema para referenciar (sin ambigüedad) las publicaciones científicas asociadas a Journals, Procedding o revistas de divulgación.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Número de identificación persistente y unívoco para objetos digitales (revistas, artículos, libros, productos multimedia).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosAlumno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosAlumno">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a los alumnos de una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArchivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArchivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a todos los archivos almacenados en un repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArticulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArticulo">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a todos los artículos cientificos o de divulgacion almacenados en un repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a las bases de datos almacenadas en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosColeccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosColeccion">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a las agrupaciones de documentos realizadas por el repositorio (Dspace).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosComunidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosComunidad">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas al conjunto de colecciones dentro del repositorio (Dspace).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a los documentos almacenados en el repositorio (de manera general).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas al organismo de educación/investigación ligado al repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosObjetosAprendizaje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosObjetosAprendizaje">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a los objetos de aprendizaje.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a una persona y su rol dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a los instrumentos y acciones legales encaminadas a la organización y uso del repositorio institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor">
+        <rdfs:comment xml:lang="es">Propiedades/características asociadas a una persona que tiene el rol de maestro o profesor dentro de una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosReporteInvestigacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosReporteInvestigacion">
+        <rdfs:comment xml:lang="es">Propiedades/características relacionadas a un documento que sumariza los avances realizados en un trabajo de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:comment xml:lang="es">Principales características (especificas) relacionadas a un repositorio institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosResponsableAdministracionRI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosResponsableAdministracionRI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+        <rdfs:comment xml:lang="es">Características de la(s) persona(s) encargada(s) de administrar el repositorio institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosServicio">
+        <rdfs:comment xml:lang="es">Características asociadas a las distintas funciones realizadas dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis">
+        <rdfs:comment xml:lang="es">Principales características relacionadas con un trabajo de tesis presentado en una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Departamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Departamento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Área a la que está adscrito el profesor en la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DepartamentoAlumno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DepartamentoAlumno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosAlumno"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Área a la que está adscrito el alumno en la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DepartamentoTesis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DepartamentoTesis">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Área en la que el creador de la tesis esta adscrito como parte de su carrera o especialidad en la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionColeccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionColeccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosColeccion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Detalles del propósito de la agrupación de documentos electrónicos dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionComunidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionComunidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosComunidad"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comunidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Detalles del propósito de la agrupación de colecciones de documentos electrónicos dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionPolitica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionPolitica">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Explicación detallada de los métodos y acciones a seguir para asegurar el acceso/administración del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionRepositorio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionRepositorio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DescripcionServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosServicio"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Resumen detallado del proposito y aplicacion del servicio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DireccionInstitucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DireccionInstitucion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Camino, vía o rumbo que se debe seguir para llegar a la institución.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Editorial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Editorial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Una editorial es una empresa que se dedica económicamente a la publicación de materiales impresos como libros, revistas, periódicos, folletos, mapas, pósters, etc. Ya sea utilizando cualquier medio de impresión y reproducción gráfica o bien medios electrónicos.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Escuela -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Escuela">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Adscripción del profesor a una de las facultades de la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EscuelaAlumno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EscuelaAlumno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosAlumno"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Adscripción del alumno a una de las facultades de la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Especialidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Especialidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaFinalVigencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaFinalVigencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="es">Fecha en la que termina cierta política institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaInicialVigencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaInicialVigencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="es">Fecha en la que inicio cierta política institucional.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaPublicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaPublicacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Fecha de publicación del documento.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaUltimaActualizacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FechaUltimaActualizacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Día en que se añadió/elimino/cambio información almacenada en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FinalizacionEmbargo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#FinalizacionEmbargo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArticulo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoAbierto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoRestringido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="es">Las editoriales normalmente proveen esta información. Su formato se codifica (AAAA-MM-DD).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Periodo en el cual un artículo puede ser distribuido/compartido a otras personas de manera libre dentro de un repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Formato -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Formato">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArchivo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Modo de representación del documento electrónico dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Genero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Genero">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identidad sexual de una persona (masculino o femenino).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GradoAcademico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GradoAcademico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Máximo grado conferido a un profesor por parte de una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GradoAcademicoAlumno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GradoAcademicoAlumno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosAlumno"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Máximo grado a conferirse a un alumno por parte de una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Horario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Horario">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosResponsableAdministracionRI"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Periodo temporal durante el que se lleva a cabo una actividad asociada al repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="es">Numero usado para identificar de manera única e inequívoca a un estudiante, profesor o colaborador (científico) relacionado a la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ISBN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroCientifico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Estándard Internacional para la Numeración de Libros, por sus siglas en inglés.</rdfs:comment>
+        <rdfs:comment xml:lang="en">International Standard Book Number.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ISSN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ISSN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código numérico normalizado para el título de publicaciones seriadas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">International Standard Serial Number.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdentificadorArchivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdentificadorArchivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArchivo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="es">Numero/URI usada para representar de manera única e inequívoca a un documento electrónico dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdentificadorRepositorio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdentificadorRepositorio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="es">Numero/URI usada para representar de manera única e inequívoca a un repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Idioma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Idioma">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+        <rdfs:comment xml:lang="es">Sistema de comunicacion verbal usado para la escritura de un documento.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdiomaDeDocumentos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#IdiomaDeDocumentos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Lenguaje(s) usados en los documentos almacenados en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#JuradoCalificador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#JuradoCalificador">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Sinodales asociados a la revisión y aprobación de un documento de tesis en la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ListaPropiedadesAlmacenadas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ListaPropiedadesAlmacenadas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de características representativas de un tópico/área.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcceso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcceso">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Cualquier documento relacionado al repositorio debe de tener una categoría que denote el grado de acceso que se tiene sobre dicho documento. En específico existen 4 categorias: closedAccess / embargoedAccesss / openAccess / restrictedAccess.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelTesis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelTesis">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nivel académico asociado al trabajo de investigación realizado. En esta propiedad se consideran tres tipos de niveles (de acuerdo a la estructura educativa en México):
+
+1. Licenciatura
+2. Maestría
+3. Doctorado</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreArchivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreArchivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArchivo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de palabras/letras que sirve para designar/referir a un archivo electrónico.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreColeccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreColeccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosColeccion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de palabras/letras que sirve para designar/identificar a un grupo de documentos electrónicos dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreComunidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreComunidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosComunidad"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comunidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de palabras/letras que sirve para designar/identificar a un grupo de colecciones de documentos electrónicos dentro del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreDePila -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreDePila">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de palabras/letras que sirve para designar/identificar a una sola persona.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreInstitucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreInstitucion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador usado para nombrar a una institución.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreRepositorio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreRepositorio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Conjunto de palabras/letras que sirve para designar/identificar a un repositorio institucional con respecto a otros.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NombreServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosServicio"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nombre del servicio implementado en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Numero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Numero">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Dentro de un volumen, es el orden de publicación dentro de una revista de investigación o de divulgación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NumeroDatos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NumeroDatos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Cantidad de información almacenada acerca de un tópico o dominio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NumeroDocumentos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NumeroDocumentos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Cantidad de documentos almacenados en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ORCID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ORCID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador de investigador y contribuidor abierto, por sus siglas en inglés, es un identificador único e independiente para eliminar la ambigüedad de los nombres de autores en publicaciones científicas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Open Researcher and Contributor ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Oficina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Oficina">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorDeTiempoCompleto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Número del cubículo asignado a un profesor de tiempo completo.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PaginaFinal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PaginaFinal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArticulo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Ultima página de un artículo, donde normalmente se incluye la bibliografía/referencias.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PaginaInicial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PaginaInicial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosArticulo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Primera página de un artículo. Dicha página normalmente contiene los autores, resumen y palabras clave.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PalabrasClave -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PalabrasClave">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Serie de palabras usadas para describir de manera rápida y especifica al contenido de un documento electrónico.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Password">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPersona"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Contraseña usada para acceder al repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Proponente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Proponente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Entidades o individuos que organizan, proponen o abogan por la adminsitracion eficiente de un proyecto en particular (en este caso un repositorio).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Puesto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Puesto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosProfesor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Lugar o área ocupado por un profesor dentro de la universidad, donde se desarrollan una serie de actividades las cuales satisfacen expectativas, que tienen como objetivo, garantizar productos, servicios y bienes en un marco social.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResultadoCientifico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResultadoCientifico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Naturaleza o género del contenido del recurso. Deberá consumirse el catálogo de Tipo de publicación proporcionado por CONACYT.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Resumen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Resumen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">También llamado &quot;abstract&quot;, muestra una breve descripción del tipo de investigación/análisis realizado en un documento  así como los experimentos y descubrimientos relacionados.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Servicios -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Servicios">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Descripción de las distintas funcionalidades ofrecidas por parte del repositorio a los usuarios.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWeb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWeb">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Documento electrónico adaptado particularmente para el Web, que contiene la información del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebBaseDatos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebBaseDatos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosBaseDatos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebInstitucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebInstitucion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Documento electrónico adaptado particularmente para el Web, que contiene información específica acerca de la institución.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebTesis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SitioWebTesis">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosTesis"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Dirección electrónica usada para localizar una tesis dentro del acervo digital de la universidad.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Telefono">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosResponsableAdministracionRI"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Serie de números usados para poder comunicarse con el responsable.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TelefonoInstitucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TelefonoInstitucion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosInstitucion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Serie de números usados para poder comunicarse con la institución.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Tema -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Tema">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Tópico asociado al contenido de un documento.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoContenidoMultimedia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoContenidoMultimedia">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosObjetosAprendizaje"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ObjetosAprendizaje"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Descripción del recurso de información interactivo almacenado en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoDeDocumentos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoDeDocumentos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosRepositorioInstitucional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Descripción de los documentos electrónicos almacenados en el repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoPolitica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoPolitica">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosPolitica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Detalles del propósito de las acciones a seguir para asegurar el acceso/administración del repositorio.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoReporte -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TipoReporte">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosReporteInvestigacion"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteDeInvestigacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Detalles acerca del área y tópico asociados al contenido del reporte escrito.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Titulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Titulo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nombre usado para identificar un documento electrónico.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Volumen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Volumen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDocumento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroCientifico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroDivulgacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Parte o apartado conceptual en que se estructura la publicación periodica de revistas de investigación y divulgación.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="en">Application Programming Interface</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">Interfaz para Programación de Aplicaciones, por sus siglas en inglés.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:comment xml:lang="es">Persona asociada al ámbito de la enseñanza en distintos niveles de la educación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Acceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Acceso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de objetivos, estrategias y líneas de acción que buscan definir los derechos y mecanismos de consulta de los usuarios potenciales del repositorio institucional.</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoARecursosDeInformacionAcademicaCientificaTecnologicaYDeInnovacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoARecursosDeInformacionAcademicaCientificaTecnologicaYDeInnovacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto"/>
+        <rdfs:comment xml:lang="es">El acceso al que se hace referencia también incluye bases de datos que contienen los registros de citas e información bibliográfica de artículos de revistas científicas, tecnológicas y de innovación, tesis y disertaciones, protocolos, memorias de congresos y patentes, entre otros. Asimismo, se contemplan colecciones de conocimientos accesibles de los productos de investigación como informes y reportes, bases de datos primarias de investigación.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de técnicas utilizadas para buscar, categorizar y acceder de manera inequívoca, al texto completo de publicaciones reconocidas por los sectores académico, de ciencia, tecnología e innovación. El acceso al que se hace referencia también incluye bases de datos que contienen los registros de citas e información bibliográfica de artículos de revistas científicas, tecnológicas y de innovación, tesis y disertaciones, protocolos, memorias de congresos y patentes, entre otros. Asimismo se contemplan colecciones de conocimientos accesibles de los productos de investigación como informes y reportes, bases de datos primarias de investigación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:comment xml:lang="es">En este tipo de acceso, cualquier persona con conexión a internet, puede tener acceso sin restricciones económicas, técnicas o legales, a información científica, académica, de desarrollo tecnológico, innovación o cultural producida con recursos públicos o que en su producción se usó infraestructura pública.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Acceso a través de una plataforma digital y sin requerimientos de suscripción, registro o pago, a las investigaciones, materiales educativos, académicos, científicos, tecnológicos y de innovación, financiados total o parcialmente con recursos públicos o que hayan utilizado infraestructura pública en su realización, sin perjuicio de las disposiciones en materia de patentes, protección de la propiedad intelectual o industrial, seguridad nacional y derechos de autor, entre otras, así como de aquella información que, por razón de su naturaleza o decisión del autor, sea confidencial o reservada.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:isDefinedBy xml:lang="es">Responsable de controlar y/o supervisar el buen funcionamiento del repositorio institucional.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona encargada del funcionamiento, el rendimiento y la estructura de una organización.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Almacenamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Almacenamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:comment xml:lang="es">Proceso de acopio de recursos de información en el repositorio institucional.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Almetria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Almetria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="es">Además del número de citas, las métricas contemplan otros aspectos del impacto de un trabajo como bases de datos que se refieren a él, visualizaciones, descargas, menciones en redes sociales o en prensa.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de métricas alternativas al factor de impacto.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Alumno">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que recibe las enseñanzas y conocimientos de un académico en una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BitStream"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Recurso de información que se almacena en Dspace.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:comment xml:lang="es">Documento electrónico de divulgación científica en el cual se presentan los resultados, avances e innovaciones relacionadas a un área determinada del conocimiento.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion"/>
+        <rdfs:comment xml:lang="es">Documento electrónico en el cual se presentan comentarios, crónicas, entrevistas, reseñas etc., relacionadas con un tópico o tema específico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Asociacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Asociacion">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consorcio"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:comment xml:lang="es">Grupo de personas relacionadas entre si para hacer cumplir un fin especifico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AutoArchivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AutoArchivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Almacenamiento"/>
+        <rdfs:isDefinedBy xml:lang="es">Práctica donde los investigadores depositan o archivan sus trabajos en un repositorio institucional.</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Autor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Autor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">El autor es aquella persona que crea una obra, sea artística, literaria o científica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:comment xml:lang="es">Conjunto de documentos electrónicos asociados a un tópico o dominio, los cuales pueden ser usados/analizados con propósitos de trabajo o investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BitStream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BitStream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:comment xml:lang="es">Recurso de información que se almacena en Dspace.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CONACYT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CONACYT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consejos"/>
+        <rdfs:comment>Es un organismo público descentralizado del gobierno federal mexicano dedicado a promover y estimular el desarrollo de la ciencia y la tecnología en ese país. Tiene la responsabilidad oficial para elaborar las políticas de ciencia y tecnología nacionales.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Consejo Nacional de Ciencia y Tecnología</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CapituloDeLibroCientifico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CapituloDeLibroCientifico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:comment xml:lang="es">División que se hace en un libro de carácter científico  para facilitar la comprensión de un tema específico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CapituloLibroDivulgacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CapituloLibroDivulgacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion"/>
+        <rdfs:comment xml:lang="es">División que se hace en un libro de carácter de divulgación para facilitar la comprensión de un tema específico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Catalogacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Catalogacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:comment xml:lang="es">Proceso de obtención o creación de metadatos que representan los recursos de información en el repositorio institucional.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CatalogoCONACYT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CatalogoCONACYT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Catalogacion"/>
+        <rdfs:isDefinedBy xml:lang="es">Catálogo el cual contendrá la clasificación de áreas temáticas de ciencia y tecnología y los criterios mediante los cuales se homologan o normalizan los códigos de identificación para el autor, la institución y el área del conocimiento, disciplinas y subdisciplinas.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CentroDeInvestigacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CentroDeInvestigacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:comment xml:lang="es">Organización cuyo propósito es el de generar conocimiento científico, tecnológico, social y humanístico relacionado a vareas áreas de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:comment xml:lang="es">Conjunto de documentos electrónicos del mismo tipo agrupados en Dspace.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Comité de Acceso Abierto a la Información Científica, Tecnológica y de Innovación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comunidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comunidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Archivo"/>
+        <rdfs:isDefinedBy xml:lang="es">En Dspace, agrupa a una o más colecciones; puede tener un responsable distinto al del repositorio institucional.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consejos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consejos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:comment xml:lang="es">Organismo público creado para atender/satisfacer un fin relacionado a un área especifica (laboral, investigación, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consorcio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consorcio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:comment xml:lang="es">Grupo de personas relacionadas entre si para hacer cumplir un fin especifico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Creacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Creacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de objetivos, estrategias, así como líneas de acción que definen los mecanismos de creacion y enriquecimiento de la colección de datos en el repositorio institucional.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionProceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionProceso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionPrototipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionPrototipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionServicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreacionServicio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreativeCommons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CreativeCommons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Licencia"/>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de licencias públicas de libre difusión que complementan los derechos de autor y fomentan la colaboración, así como la distribución y uso de los materiales creativos.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CuerpoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#CuerpoAcademico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+        <rdfs:comment>Grupo de profesores de tiempo completo (normalmente) que persiguen objetivos comunes en la generación del conocimiento o en la aplicación innovadora del mismo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DINI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DINI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Identificador"/>
+        <rdfs:isDefinedBy xml:lang="es">Iniciativa alemana para la información en red, por sus siglas en alemán, la cual contempla criterios para los repositorios, autores y editoriales, en cuanto a aspectos legales y seguridad de la información, entre otros.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDeInvestigaciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DatosDeInvestigaciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:isDefinedBy xml:lang="es">Información recolectada y utilizada para la investigación académica, científica, tecnológica y de innovación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Decanatura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Decanatura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+        <rdfs:comment>Oficina responsable de la dirección académica y administrativa de una facultad universitaria.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DesarrolloTecnologico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DesarrolloTecnologico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DiagnosticoDelEstadoDeLaTecnologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DiagnosticoDelEstadoDeLaTecnologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Diplomado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Diplomado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico"/>
+        <rdfs:comment xml:lang="es">Curso de mediana o larga duración, el cual es generalmente dictado por una universidad o centro de investigación y tiene el propósito de enseñar, complementar o actualizar algún conocimiento o habilidad específica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Rector"/>
+        <rdfs:comment xml:lang="es">Persona encargada de dirigir una actividad o proceso dentro de una empresa, institución de educación o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Discente">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que recibe las enseñanzas y conocimientos de un académico en una institución de educación superior o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Diseminacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Diseminacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:isDefinedBy xml:lang="es">Transmisión de información académica, científica, tecnológica y de innovación desarrollada por parte de los investigadores o especialistas que utiliza un lenguaje especializado.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Distribucion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Distribucion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:comment xml:lang="es">Define los lineamientos para la divulgación y difusión del contenido del repositorio institucional.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Una política de distribución se refiere a la forma o conjunto de criterios en la que se distribuyen los documentos y los metadatos del repositorio institucional. Indica qué pueden hacer los usuarios con los documentos o metadatos descargados en un marco legal.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Doctorado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Doctorado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico"/>
+        <rdfs:comment xml:lang="es">Es el grado más alto que confiere una institución educativa o centro de investigación en determinada disciplina y/o profesión, la cual certifica que una persona a dominado totalmente la teoria y practica asociada a un area de estudio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DublinCore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DublinCore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Metadatos"/>
+        <rdfs:isDefinedBy xml:lang="es">Estructura normada de metadatos enfocados a la descripción de recursos de información (electrónicos e impresos) de distintos dominios informativos.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Embargo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Embargo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Periodo de tiempo en el cual las editoriales retienen los derechos exclusivos de publicación del autor.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EnmiendasDeAutor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EnmiendasDeAutor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Modificaciones a los contratos, mediante las cuales se pueden modificar algunas cláusulas para retener derechos de autor.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Especialidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Especialidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EstandaresInternacionales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EstandaresInternacionales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto"/>
+        <rdfs:isDefinedBy xml:lang="es">Lineamientos y procedimientos técnicos y administrativos establecidos por agencias internacionales de normalización de las que México forma parte para la organización, procesamiento, preservación, almacenamiento y recuperación de la información documental de referencia y texto completo; las características estructurales y la certificación, acreditación y evaluación de los repositorios.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Estudiante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que recibe las enseñanzas y conocimientos de un académico en una institución de educación o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EvaluacionPorPares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EvaluacionPorPares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="es">También conocido como arbitraje.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Es el proceso por medio del cual se validan los materiales académicos, en donde autores de rango semejante o superior al del autor, revisan la calidad, originalidad, factibilidad y rigor científico de la investigación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que alguna vez perteneció a una institución de educación superior o centro de investigación y que además contribuyo con la creación de varios documentos electrónicos durante su estancia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que alguna vez perteneció a una institución de educación superior o centro de investigación y que además contribuyo con la creación de varios documentos electrónicos durante su estancia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que alguna vez perteneció a una institución de educación superior o centro de investigación y que además contribuyo con la creación de varios documentos electrónicos durante su estancia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Agrupa las tareas que realizan los usuarios del repositorio institucional.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de definiciones de lineamientos técnicos que no se asocian con las clases principales del RI.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Handle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Handle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Metadatos"/>
+        <rdfs:isDefinedBy xml:lang="es">Sistema de identificación y preservación de objetos digitales, el cual asigna una dirección permanente en internet, independientemente a la dirección del servidor donde éstos se encuentran alojados.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Identificador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Identificador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion"/>
+        <rdfs:comment xml:lang="es">Código alfanumérico único utilizado por varios países para identificar de manera inequívoca a un repositorio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Innovacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Innovacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Organismo público o privado fundado para desempeñar una labor científica, académica o de investigación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Institucion"/>
+        <rdfs:comment xml:lang="es">Organizaciones o entidades que cuentan con el reconocimiento oficial para prestar servicios de educación superior a un grupo de personas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Interoperabilidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Interoperabilidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:isDefinedBy xml:lang="es">Capacidad del Repositorio Nacional y de los Repositorios Institucionales de intercambiar información, acorde con parámetros que cumplan con los protocolos de metadatos para su recuperación.</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LA-Referencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LA-Referencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Consorcio"/>
+        <rdfs:isDefinedBy xml:lang="es">Cosechador latinoamericano de repositorios institucionales que se alimenta de los nodos nacionales.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroCientifico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroCientifico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:comment xml:lang="es">Documento de texto dividido en capítulos o secciones que incluyen un amplio compendio de información relacionada a un tópico o tema.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroDivulgacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#LibroDivulgacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#DublinCore"/>
+        <rdfs:comment xml:lang="es">Documento de texto dividido en capítulos o secciones que incluyen información relacionada a un tópico o tema.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Licencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Licencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto"/>
+        <rdfs:comment xml:lang="es">Una licencia es un contrato entre el licenciante (autor/titular de los derechos de explotación/distribuidor) y el licenciatario de un producto (usuario consumidor /usuario profesional o empresa), para utilizar dicho producto cumpliendo una serie de términos y condiciones establecidas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Licenciatura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Licenciatura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico"/>
+        <rdfs:comment xml:lang="es">Título o grado académico que se obtiene tras realizar ciertos estudios de educación superior, los cuales certifican que una persona esta capacitada para cumplir con una serie de tareas en un ámbito laboral determinado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Maestria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Maestria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico"/>
+        <rdfs:comment xml:lang="es">Grado obtenido después de hacer una licenciatura, el cual certifica que una persona esta capacitada para realizar una seria de tareas o enseñar la teoria relacionada a estas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Mantenimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Mantenimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio"/>
+        <rdfs:isDefinedBy xml:lang="es">Una política de mantenimiento hace referencia a la frecuencia en la que se propone realizar los respaldos del repositorio; indica quién es el responsable de hacer estos respaldos y el tipo de respaldo que se hará, el cual podría ser completo o incremental.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraAlEstadoDeLaTecnologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraAlEstadoDeLaTecnologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraProceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraProceso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraPrototipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraPrototipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraServicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MejoraServicio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MemoriasDeCongreso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#MemoriasDeCongreso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:comment>Compendio de artículos de investigación derivados de un congreso, simposio o convención de divulgación científica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Metadatos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Metadatos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion"/>
+        <rdfs:isDefinedBy xml:lang="es">Elementos de descripción que proveen información básica de las publicaciones y demás recursos de información electrónicos.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#NivelAcademico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Niveles o grados a obtener en instituciones de educación superior o centros de investigación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#OAI-PMH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#OAI-PMH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Metadatos"/>
+        <rdfs:comment xml:lang="en">Open Archives Initiative Protocol for Metadata Harvesting</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Protocolo de la iniciativa de archivos abiertos para la cosecha de metadatos, por sus siglas en inglés, el cual es un mecanismo para la interoperabilidad de los repositorios.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ObjetosAprendizaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ObjetosAprendizaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:comment xml:lang="es">Un objeto de aprendizaje es un conjunto de recursos digitales, auto contenible y reutilizable, con un propósito educativo y constituido por al menos tres componentes internos: Contenidos, actividades de aprendizaje y elementos de contextualización.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#OpenAIRE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#OpenAIRE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#AccesoAbierto"/>
+        <rdfs:comment xml:lang="en">Open Access Infrastructure for Research in Europe.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Puesta en marcha en la Universidad de Gante, Bélgica.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Infraestructura de Acceso Abierto a la Investigación en Europa</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Patente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Patente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Es un individuo de la especie humana.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Académico, alumno u otra persona ajena a la universidad o centro de investigación donde se aloja el repositorio institucional el cual colaboro en la elaboración de uno o varios documentos electrónicos dentro del repositorio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PoliticaRepositorio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <rdfs:isDefinedBy xml:lang="es">Conjunto de técnicas utilizadas para buscar, categorizar y acceder manera inequívoca, al texto completo de publicaciones reconocidas por los sectores académico, de ciencia, tecnología e innovación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Preservacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Preservacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:isDefinedBy xml:lang="es">Mecanismos que garantizan la persistencia y permanencia de las colecciones en el repositorio institucional a través del tiempo tomando en cuenta los cambios tecnológicos.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:comment xml:lang="es">Conjunto de acciones y/o actividades a realizarse dentro del repositorio para trabajar/manipular elementos electrónicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorDeTiempoCompleto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorDeTiempoCompleto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:comment xml:lang="es">Docente que se dedica de tiempo completo a la enseñanza en una escuela o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorTiempoParcial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorTiempoParcial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Academico"/>
+        <rdfs:comment xml:lang="es">Docente que imparte uno o más cursos dentro de una universidad o centro de investigación pero solo por un periodo de tiempo determinado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProgramaAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProgramaAcademico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+        <rdfs:comment>Diversas modalidades de planes de estudio que son ofrecidas por una universidad para la enseñanza de distintos tópicos relacionados a un área especifica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:comment xml:lang="es">Obra impresa o electrónica en la que se promueve la investigación a través de la escritura de artículos científicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionDivulgacionDifusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="es">Obra impresa o electrónica en la que se promueve la divulgación de información a través de la escritura de artículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Rector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Rector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrativo"/>
+        <rdfs:comment xml:lang="es">Máxima autoridad académica de una universidad o centro de investigación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Recuperacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Recuperacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Funcionalidad"/>
+        <rdfs:comment xml:lang="es">Mecanismos que permiten consultar, seleccionar y exportar documentos contenidos en las colecciones del repositorio institucional.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Coleccion"/>
+        <rdfs:comment xml:lang="es">Distintos tipos de elementos electrónicos disponibles para almacenarse en un repositorio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Redalyc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Redalyc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="es">Base de datos en línea y repositorio digital de textos científicos en acceso abierto.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Red de Revistas Científicas de América Latina y el Caribe, España y Portugal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteDeInvestigacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteDeInvestigacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:comment xml:lang="es">Documento donde se presentan los experimentos y/o resultados de un estudio con respecto a un tema específico. Dicho estudio pretende dar respuesta a varias preguntas de investigación, las cuales pueden ampliar el conocimiento en un área.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Repositorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Repositorio">
+        <rdfs:isDefinedBy xml:lang="es">Plataforma digital centralizada que, siguiendo estándates internacionales, almacena, mantiene, preserva y disemina la información científica, tecnológica y de innovación, la cual se deriva de las investigaciones, productos educativos, académicos y desarrollos tecnológicos.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional">
+        <rdfs:comment xml:lang="es">Plataforma digital centralizada que, siguiendo estándates internacionales, almacena, mantiene, preserva y disemina la información científica, tecnológica y de innovación, la cual se deriva de las investigaciones, productos educativos, académicos y desarrollos tecnológicos.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Plataforma digital de las instituciones de los sectores social, privado y gubernamental, que contiene su información académica, científica, tecnológica y de innovación, la cual deberá vincularse con el Repositorio Nacional siguiendo estándares internacionales previstos en estos Lineamientos Técnicos.</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#EstadaresInternacionales"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioNacional">
+        <rdfs:isDefinedBy xml:lang="es">Repositorio Nacional de Acceso Abierto a Recursos de Información Académica, Científica, Tecnológica y de Innovación, de calidad e interés social y cultural el cual consiste en una plataforma digital centralizada cuya coordinación y modelos de operación serán emitidos por el CONACYT, que siguiendo estándares internacionales, almacena, mantiene, preserva y disemina la información académica, científica, tecnológica y de innovación, la cual se deriva de las investigaciones, productos educativos y académicos.</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RecursoDeInformacionAcademicaCientificaTecnologicaYDeInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResearchGate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResearchGate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Red social de investigadores que comparten producción científica para el avance del conocimiento.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Responsable de controlar y/o supervisar el buen funcionamiento del repositorio institucional.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoAbierto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoAbierto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:comment>Publicación periódica de acceso gratuito en la que se describen los avances relacionados a la ciencia y tecnología a través de la difusión de distintos artículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoRestringido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaCientificaDeAccesoRestringido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <rdfs:comment>Publicación periódica de acceso restringido en la que se recoge el progreso de la ciencia y tecnología a través de la divulgación de distintos artículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaDeAccesoAbierto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaDeAccesoAbierto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:comment>Publicación periódica de acceso gratuito en la que se describen o discuten distintos temas a través de la difusión de artículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaDeAccesoRestringido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RevistaDeAccesoRestringido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloDivulgacion"/>
+        <rdfs:comment>Publicación periódica de acceso restringido en la que se habla o comenta acerca de varios temas a través de la divulgación de artículos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SIICYT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SIICYT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Sistema Integrado de Información sobre Investigación Científica, Desarrollo Tecnológico e Innovación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SNCTI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SNCTI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:isDefinedBy xml:lang="es">Sistema Nacional de Ciencia, Tecnología e Innovación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SRU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SRU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="en">Search/Retrieve via URL.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Búsqueda y recuperación vía URL.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SWORD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#SWORD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="en">Simple Web-service Offering Repository Deposit.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Servicio en Línea para el Depósito Simplificado en los Repositorios.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Scopus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Scopus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="es">Scopus es la mayor base de datos de citas y resúmenes de literatura cientifica. Scopus cuenta con herramientas inteligentes para rastrear, analizar y visualizar la investigación, ofreciendo una visión general de la producción mundial de investigación en los campos de ciencia, tecnología, medicina, ciencias sociales y artes y humanidades.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Subcomite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Subcomite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Comite"/>
+        <rdfs:isDefinedBy xml:lang="es">Subcomité de Comunicación.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PublicacionCientifica"/>
+        <rdfs:comment xml:lang="es">Una tesis de grado es un trabajo de investigación que se realiza al término de una carrera universitaria y que amplía o profundiza en un área del conocimiento humano aportando una novedad o una revisión crítica utilizando métodos científicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TransferenciaTecnologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TransferenciaTecnologica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProductoDelDesarrolloTecnologicoYLaInnovacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Usuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Usuario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona"/>
+        <rdfs:comment xml:lang="es">Persona que utiliza el repositorio institucional para consultar o almacenar documentos electrónicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#XML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#XML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#GlosarioTerminos"/>
+        <rdfs:comment xml:lang="en">Extensible Markup Language.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="es">Lenguaje de marcado extensible.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Articulo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Articulo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ArticuloCientifico"/>
+        <AreaConocimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingeniería e Industria</AreaConocimiento>
+        <Autores rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban Castillo, Ofelia Cervantes y Darnes Vilariño</Autores>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.13053/CyS-21-4-2551</DOI>
+        <Editorial rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computacion y Sistema IPN</Editorial>
+        <FechaPublicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-12-31</FechaPublicacion>
+        <ISSN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007-9737</ISSN>
+        <Idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENG</Idioma>
+        <Numero rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Numero>
+        <PaginaFinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PaginaFinal>
+        <PaginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</PaginaInicial>
+        <PalabrasClave rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text modeling, graph-based representation, co-occurrence graphs, text classification, feature-vector approach, graph similarity approach.</PalabrasClave>
+        <Resumen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This paper presents an overview of different graph-based representations proposed to solve text classification tasks. The core of this manuscript is to highlight the importance of enriched/non-enriched co-occurrence graphs as analternative to traditional features representation models like vector representation, where most of the time these models can not map all the richness of text documents that comes from the web (social media, blogs, personalweb pages, news, etc). For each text classification task the type of graph created as well as the benefits of using it are presented and discussed. In specific, the type of features/patterns extracted, the implemented classification/similarity methods and the results obtained in datasets are explained. The theoretical and practical implications of using co-occurrence graphs are also discussed, pointing out the contributions and challenges of modeling text document as graphs.</Resumen>
+        <Titulo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text Analysis using Different Graph-Based Representations</Titulo>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos"/>
+        <BaseDatosDescripcion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El Índice de Impunidad de México (IGI-MEX) es resultado del análisis cuantitativo de los datos oficiales que reportan las instituciones de seguridad y justicia de las entidades federativas al INEGI.</BaseDatosDescripcion>
+        <BaseDatosNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Índice Global de Impunidad 2015</BaseDatosNombre>
+        <ListaPropiedadesAlmacenadas rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clave Entidad
+Entidad
+Presuntos delitos registrados por 100 mil hab
+Personal en las Procuradurías  por 100 mil hab
+Presupuesto ejercido  por la Procuraduríaa o Fiscalía General de Justicia per cápita
+Agencias del Ministerio Público por 100 mil hab
+Porcentaje de Agencias del Ministerio Público especializadas en delitos graves
+Personal del Ministerio Público por 100 mil hab
+Agentes del Ministerio Público por 100 mil hab
+Agentes del Ministerio Público por mil delitos registrados
+Peritos del Ministerio Píblico por mil delitos registrados
+Policías judiciales por 100 mil hab.
+Porcentaje de personal de seguridad pública aprobado
+Personal total destinado a funciones de Seguridad Pública por 100 mil hab</ListaPropiedadesAlmacenadas>
+        <NumeroDatos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1234535</NumeroDatos>
+        <SitioWebBaseDatos rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.udlap.mx/igimex/</SitioWebBaseDatos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorTiempoParcial"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <AdscritoA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad1"/>
+        <EsAutorDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Articulo1"/>
+        <EsAutorDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1"/>
+        <EsUsuarioDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP"/>
+        <ApellidoMaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juarez</ApellidoMaterno>
+        <ApellidoPaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Castillo</ApellidoPaterno>
+        <CVU rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">373269</CVU>
+        <CorreoElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esteban.castillo@udlap.mx</CorreoElectronico>
+        <Departamento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computación Electrónica y Mecatronica</Departamento>
+        <Escuela rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingenieria</Escuela>
+        <Genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</Genero>
+        <GradoAcademico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor en ciencias de la computación</GradoAcademico>
+        <NombreDePila rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban</NombreDePila>
+        <Puesto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Profesor</Puesto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ProfesorDeTiempoCompleto"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <AdscritoA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad1"/>
+        <EsAutorDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Articulo1"/>
+        <EsAutorDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1"/>
+        <EsUsuarioDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP"/>
+        <ApellidoMaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Villagómez</ApellidoMaterno>
+        <ApellidoPaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cervantes</ApellidoPaterno>
+        <CVU rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120923</CVU>
+        <CorreoElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ofelia.cervantes@udlap.mx</CorreoElectronico>
+        <Departamento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computación Electrónica y Mecatronica</Departamento>
+        <Escuela rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingerieria</Escuela>
+        <Genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</Genero>
+        <GradoAcademico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctora en ciencias de la computación</GradoAcademico>
+        <NombreDePila rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ofelia</NombreDePila>
+        <Oficina rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IA-250K</Oficina>
+        <Puesto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Profesora</Puesto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona3">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <AdscritoA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad2"/>
+        <EsAutorDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1"/>
+        <EsUsuarioDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP"/>
+        <ApellidoMaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nieto</ApellidoMaterno>
+        <ApellidoPaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medina</ApellidoPaterno>
+        <CVU rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">349812</CVU>
+        <CorreoElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mauxmedina@gmail.com</CorreoElectronico>
+        <Genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</Genero>
+        <NombreDePila rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Auxilio</NombreDePila>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Administrador"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ResponsableRI"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExAlumno"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExDiscente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ExEstudiante"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Administra rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP"/>
+        <ApellidoMaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodríguez</ApellidoMaterno>
+        <ApellidoPaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Razo</ApellidoPaterno>
+        <CVU rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">458767</CVU>
+        <CorreoElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antrazo@gmail.com</CorreoElectronico>
+        <Genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</Genero>
+        <Horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8:00 a 17:00</Horario>
+        <NombreDePila rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antonio Felipe</NombreDePila>
+        <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2292000</Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Persona5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#PersonaExterna"/>
+        <EsUsuarioDe rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP"/>
+        <ApellidoMaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sanchez</ApellidoMaterno>
+        <ApellidoPaterno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martinez</ApellidoPaterno>
+        <CVU rdf:datatype="http://www.w3.org/2001/XMLSchema#int">213454</CVU>
+        <CorreoElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juan.martinez@buap.mx</CorreoElectronico>
+        <Genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</Genero>
+        <NombreDePila rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan</NombreDePila>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteDeInvestigacion"/>
+        <AreaConocimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingeniería e Industria</AreaConocimiento>
+        <Autores rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban Castillo y ofelia Cervantes.</Autores>
+        <FechaPublicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-03-15</FechaPublicacion>
+        <Idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESP</Idioma>
+        <NivelAcceso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">openAccess</NivelAcceso>
+        <PalabrasClave rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologias, repositorio, Dspace, protégé</PalabrasClave>
+        <Resumen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reporte que describe la creación de una ontología usando la herramienta protégé. Dicha ontología sirve como modelo de referencia para la representación de los datos en un repositorio institucional.</Resumen>
+        <TipoReporte rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descripción de ontología para proyecto de investigación</TipoReporte>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioUDLAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#RepositorioInstitucional"/>
+        <ContieneA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Articulo1"/>
+        <ContieneA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#BaseDatos1"/>
+        <ContieneA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#ReporteInvestigacion1"/>
+        <ContieneA rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Tesis1"/>
+        <DescripcionRepositorio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El objetivo general de Pohua es impulsar el desarrollo del repositorio institucional de la UDLAP y vincularlo al Repositorio Nacional y otras redes internacionales de repositorios. Esto se logrará potenciando los contenidos, servicios y experiencia que se han venido construyendo, a través de la formalización de normas y procedimientos de acceso abierto para la comunidad que genera conocimiento en la institución, así como diseñando, implementando y poniendo en marcha una plataforma de colaboración para compartir y visualizar dicho conocimiento.</DescripcionRepositorio>
+        <FechaUltimaActualizacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-03-08</FechaUltimaActualizacion>
+        <IdiomaDeDocumentos rdf:datatype="http://www.w3.org/2001/XMLSchema#language">Eng</IdiomaDeDocumentos>
+        <NombreRepositorio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Repositorio institucional UDLAP &quot;Pohua&quot;</NombreRepositorio>
+        <NumeroDocumentos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NumeroDocumentos>
+        <Servicios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consulta y almacenamiento de documentos electrónicos publicados en la UDLAP.</Servicios>
+        <SitioWeb rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://repositorio.udlap.mx/xmlui/</SitioWeb>
+        <TipoDeDocumentos rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tesis digitales, artículos científicos/divulgación, fuentes de datos, etc.</TipoDeDocumentos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Tesis1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Tesis1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#TesisDeGrado"/>
+        <AreaConocimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingeniería e Industria</AreaConocimiento>
+        <Autores rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Auxilio Medina Nieto</Autores>
+        <CarreraAsociada rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctorado en Ciencias de la Computación</CarreraAsociada>
+        <DepartamentoTesis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Departamento de Computación, Electrónica y Mecatrónica</DepartamentoTesis>
+        <FechaPublicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008-09-19</FechaPublicacion>
+        <IdentificadorArchivo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">oai:ciria.udlap.mx:u-dl-a/tesis/4033021101091</IdentificadorArchivo>
+        <Idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#language">ENG</Idioma>
+        <JuradoCalificador rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presidente: Dr. Mauricio Javier Osorio Galindo
+Vocal y Director: Dr. J. Alfredo Sánchez Huitrón
+Secretario: Dr. Oleg Starostenko</JuradoCalificador>
+        <NivelAcceso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">openAccess</NivelAcceso>
+        <NivelTesis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctorado</NivelTesis>
+        <PalabrasClave rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologies, Information Retrieval, Repositories</PalabrasClave>
+        <Resumen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologies are key components in the development of the SemanticWeb, as they provide a shared understanding of a domain. However, acquiring the
+knowledge needed to construct ontologies is a costly task that requires much time and many resources. This task can be supported by ontology learning
+methods, which are often based on machine learning techniques, natural language processing or clustering algorithms.</Resumen>
+        <SitioWebTesis rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://catarina.udlap.mx/u_dl_a/tales/documentos/dsc/medina_n_ma/</SitioWebTesis>
+        <Tema rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologies</Tema>
+        <Titulo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntOAIr: Construction of Lightweight Ontologies to Support Information Retrieval from Multiple Collections of Documents</Titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+        <DireccionInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sta. Catarina Mártir. San Andrés Cholula, Puebla. C.P. 72810. México</DireccionInstitucion>
+        <NombreInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universidad de las Américas Puebla (UDLAP)</NombreInstitucion>
+        <SitioWebInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.udlap.mx/inicio.aspx</SitioWebInstitucion>
+        <TelefonoInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+52 (222) 229 2112</TelefonoInstitucion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Universidad2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#InstitucionEducacionSuperior"/>
+        <DireccionInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tercer Carril del Ejido &quot;Serrano&quot; s/n  San Mateo Cuanalá. Juan C. Bonilla, Puebla, Pue.</DireccionInstitucion>
+        <NombreInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universidad Politécnica de Puebla (UPPue)</NombreInstitucion>
+        <SitioWebInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uppuebla.edu.mx/</SitioWebInstitucion>
+        <TelefonoInstitucion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01 (222) 7 74 66 40</TelefonoInstitucion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/0/repositorioUDLAP.owl#Especialidad">
+        <rdfs:comment xml:lang="es">Grado académico asociado al dominio de un tema específico muy relacionado al área laboral. En la mayoría de los casos se puede obtener dicho grado sin interrumpir las actividades laborales.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
